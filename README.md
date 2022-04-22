@@ -24,3 +24,7 @@ This page generates random passowrds:
 * CSS <br />
 * Javascript <br />
 <br />
+
+## Notes
+* HTML & CSS provided as with the challenge
+* Javascript added by Stanbaugh and finalized 4-22-2022

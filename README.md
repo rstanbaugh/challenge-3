@@ -2,7 +2,7 @@
 ##### Javascript Code Developed by: Rich Stanbuagh <br />
 
 
-![PW Generator](./assets/images/Challenge%203%20Screen%20Shot.png)
+![PW Generator](./Assets/images/Challenge%203%20Screen%20Shot.png)
 
 https://rstanbaugh.github.io/challenge-3/
 <br />

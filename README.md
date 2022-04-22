@@ -1,5 +1,5 @@
-# Challenge #4 - Web APIs
-## Client-side Javascript Code Developed by: Rich Stanbuagh <br />
+# JavaScript: Password Generator
+##### Client-side Javascript Code Developed by: Rich Stanbuagh <br />
 
 
 ![PW Generator](./Assets/images/Challenge%203%20Screen%20Shot.png)

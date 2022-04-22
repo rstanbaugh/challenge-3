@@ -10,7 +10,7 @@ function configurePassword(){
   password.pwLower = window.confirm("Would you like to include lower cases letters in your password?");
   password.pwUpper = window.confirm("Would you like to include upper cases letters in your password?");
   password.pwNumerical = window.confirm("Would you like to include numbers in your password?");
-  password.pwSpecial = window.confirm("Would you like to include special characters in your password");
+  password.pwSpecial = window.confirm("Would you like to include special characters in your password?");
   // validate at least one character type selected
   password.validateCharacterType();
 }

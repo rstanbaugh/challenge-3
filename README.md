@@ -9,14 +9,18 @@ https://rstanbaugh.github.io/challenge-3/
 <br />
 
 ## Description
-This page is a portfolio of my work, including:
-- Links to selected apps that I have in production
-- Contact information, and
-- Resume
+This page generates random passowrds:
+- User selects length between 8 and 128 characters
+- Password can consist of at last one of the following character types:
+  - Lower case letters,
+  - Upper case letters,
+  - Numbers, and/or
+  - Special characters.
 <br />
 <br />
 
 ## Built With <br />
 * HTML <br />
 * CSS <br />
+* Javascript <br />
 <br />

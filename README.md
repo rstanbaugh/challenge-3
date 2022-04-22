@@ -1,5 +1,5 @@
 # JavaScript: Password Generator
-##### Javascript Code Developed by: Rich Stanbuagh <br />
+##### Client-side Javascript Code Developed by: Rich Stanbuagh <br />
 
 
 ![PW Generator](./Assets/images/Challenge%203%20Screen%20Shot.png)

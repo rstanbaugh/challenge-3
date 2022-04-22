@@ -1,11 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Generate Password
-
-
-
-// object definitions
+// password object definition
 var password = {
   pwLength: 8,
   pwLower: false,
@@ -21,6 +17,7 @@ var password = {
     this.pwSpecial = false;
     this.password = "";
   },
+  // method to validate pw length
   validateLength: function(){
     if (this.pwLength < 8 || this .pwLength > 128){
       window.alert("You did not pick a valid length for your password!");
@@ -28,6 +25,7 @@ var password = {
       this.validateLength();
     }
   },
+  // method to validate that ≥ char type chosen for pw
   validateCharacterType: function(){
     // must select at least one type of character for password
     if(!this.pwLower && !this.pwUpper && !this.pwNumerical && !this.pwSpecial){
@@ -36,24 +34,25 @@ var password = {
       this.validateCharacterType();
     }
   },
+  // method to configure the password length + char types
   configurePassword: function(){
-    password.pwLength = window.prompt("Choose a password length between 8 and 128 characters:");
+    this.pwLength = window.prompt("Choose a password length between 8 and 128 characters:");
     // validate length
-    password.validateLength();
+    this.validateLength();
   
-    password.pwLower = window.confirm("Would you like to include lower cases letters in your password?");
-    password.pwUpper = window.confirm("Would you like to include upper cases letters in your password?");
-    password.pwNumerical = window.confirm("Would you like to include numbers in your password?");
-    password.pwSpecial = window.confirm("Would you like to include special characters in your password?");
+    this.pwLower = window.confirm("Would you like to include lower cases letters in your password?");
+    this.pwUpper = window.confirm("Would you like to include upper cases letters in your password?");
+    this.pwNumerical = window.confirm("Would you like to include numbers in your password?");
+    this.pwSpecial = window.confirm("Would you like to include special characters in your password?");
     // validate at least one character type selected
-    password.validateCharacterType();
+    this.validateCharacterType();
   },
-
+  // method to generate the password
   generatePassword: function(){
-    // if statements to choose which types of characters included in pw
     var chars ="";
     this.password = "";
-    
+
+    // if statements to choose which types of characters included in pw
     if (this.pwLower){
       chars += "abcdefghijklmnopqrstuvwxyz";
     }
@@ -66,6 +65,7 @@ var password = {
     if (this.pwSpecial){
       chars += "!@#$%^&*()";
     }
+    
     // loop to choose random characters for password
     for(var i = 0; i< this.pwLength; i++){
       var randomInt = Math.floor(Math.random()*chars.length);
